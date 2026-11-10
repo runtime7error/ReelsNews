@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <title>Reels · Futebol em Alta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="phone">
+    <!-- Cabeçalho -->
+    <header class="topbar">
+      <button class="icon-btn" id="btnBack" aria-label="Voltar">
+        <svg viewBox="0 0 24 24"><path d="M15 4 7 12l8 8" /></svg>
+      </button>
+      <button class="title" id="btnInfo" aria-label="Sobre o monitoramento">Reels</button>
+      <button class="icon-btn" id="btnRefresh" aria-label="Atualizar">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h2l1.6-2.2h5.8L16.5 6h2A2.5 2.5 0 0 1 21 8.5v9a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 17.5z" />
+          <circle cx="12" cy="13" r="3.6" />
+          <circle cx="17.6" cy="9" r=".6" class="fill" />
+        </svg>
+      </button>
+    </header>
+
+    <!-- Feed de reels -->
+    <main class="feed" id="feed" aria-live="polite">
+      <div class="state">
+        <div class="spinner"></div>
+        <p>Carregando as notícias em alta…</p>
+      </div>
+    </main>
+
+    <!-- Bottom sheet genérico -->
+    <div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+    <section class="sheet" id="sheet" aria-hidden="true">
+      <div class="sheet-handle"></div>
+      <h3 class="sheet-title" id="sheetTitle"></h3>
+      <div class="sheet-body" id="sheetBody"></div>
+    </section>
+
+    <div class="toast" id="toast"></div>
+  </div>
+
+  <template id="reelTpl">
+    <article class="reel">
+      <!-- fundo: gradiente temático + foto discreta no topo -->
+      <div class="backdrop">
+        <img class="cover" alt="" referrerpolicy="no-referrer" />
+        <div class="tint"></div>
+      </div>
+
+      <div class="progress"></div>
+
+      <div class="content">
+        <div class="trend-badge"><span class="dot"></span><span class="trend-text"></span></div>
+
+        <div class="tags"></div>
+        <h2 class="headline"></h2>
+
+        <div class="scoreboard" hidden>
+          <div class="team home"><span class="crest"></span><span class="team-name"></span></div>
+          <div class="score">
+            <div class="score-nums"><span class="s-home"></span><span class="sep">–</span><span class="s-away"></span></div>
+            <div class="score-status"></div>
+          </div>
+          <div class="team away"><span class="crest"></span><span class="team-name"></span></div>
+          <div class="score-extra"></div>
+        </div>
+
+        <div class="body"></div>
+
+        <div class="facts"></div>
+
+        <div class="big-heart">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.2 0 3.6 1.2 5.3 3.1 1.7-1.9 3.1-3.1 5.3-3.1 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z" /></svg>
+        </div>
+      </div>
+
+      <aside class="actions">
+        <button class="action like" aria-label="Curtir">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.2 0 3.6 1.2 5.3 3.1 1.7-1.9 3.1-3.1 5.3-3.1 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21z" /></svg>
+          <span class="count like-count"></span>
+        </button>
+        <button class="action comments" aria-label="Fontes da notícia">
+          <svg viewBox="0 0 24 24"><path d="M20.7 16.4A9 9 0 1 0 17 20.1L21.5 21z" /></svg>
+          <span class="count comment-count"></span>
+        </button>
+        <button class="action share" aria-label="Compartilhar">
+          <svg viewBox="0 0 24 24"><path d="M21.5 2.5 10.5 13.5M21.5 2.5 14.5 21.5l-4-8-8-4z" /></svg>
+          <span class="count share-count"></span>
+        </button>
+        <button class="action more" aria-label="Mais opções">
+          <svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.6" class="fill" /><circle cx="12" cy="12" r="1.6" class="fill" /><circle cx="19" cy="12" r="1.6" class="fill" /></svg>
+        </button>
+        <button class="action audio" aria-label="Abrir matéria">
+          <span class="audio-thumb"></span>
+        </button>
+      </aside>
+
+      <div class="meta">
+        <div class="author">
+          <span class="author-avatar"></span>
+          <span class="author-name"></span>
+          <svg class="verified" viewBox="0 0 24 24"><path d="m12 1.5 2.5 1.9 3.1-.2 1 3 2.6 1.7-.9 3 .9 3-2.6 1.7-1 3-3.1-.2L12 22.5l-2.5-1.9-3.1.2-1-3-2.6-1.7.9-3-.9-3 2.6-1.7 1-3 3.1.2z" class="fill" /><path d="m8 12 2.7 2.7L16.2 9.2" class="check" /></svg>
+          <button class="follow">Seguir</button>
+        </div>
+        <div class="meta-row">
+          <div class="music">
+            <svg viewBox="0 0 24 24"><path d="M9 18V5l11-2v13" /><circle cx="6.5" cy="18" r="2.5" class="fill" /><circle cx="17.5" cy="16" r="2.5" class="fill" /></svg>
+            <div class="marquee"><span class="music-text"></span></div>
+          </div>
+          <div class="users">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" class="fill" /><path d="M4 21a8 8 0 0 1 16 0z" class="fill" /></svg>
+            <span class="users-text"></span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

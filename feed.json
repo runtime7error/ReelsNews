@@ -1,0 +1,230 @@
+{
+  "monitoramento": {
+    "fonte": "Google Trends Brasil",
+    "url": "https://trends.google.com/trending?geo=BR",
+    "data_coleta": "2026-11-10T08:47:00-03:00",
+    "periodo_horas": 24,
+    "status": "sucesso",
+    "filtro_editorial": "Futebol",
+    "observacao": "Foram selecionadas apenas tendências relacionadas ao futebol entre as tendências identificadas pelo Google Trends. Não foram completadas artificialmente as 10 posições.",
+    "tendencias": [
+      {
+        "ranking": 1,
+        "assunto": "Carlos Miguel",
+        "volume_buscas": "2 milhões+",
+        "crescimento_percentual": "1000%",
+        "inicio_tendencia": "2026-11-09T19:47:00-03:00",
+        "categoria": "Esportes"
+      },
+      {
+        "ranking": 2,
+        "assunto": "Atlético Madrid x Barcelona",
+        "volume_buscas": "200 mil+",
+        "crescimento_percentual": "1000%",
+        "inicio_tendencia": "2026-11-09T16:47:00-03:00",
+        "categoria": "Esportes"
+      },
+      {
+        "ranking": 3,
+        "assunto": "Manchester United x Aston Villa",
+        "volume_buscas": "200 mil+",
+        "crescimento_percentual": "1000%",
+        "inicio_tendencia": "2026-11-09T13:47:00-03:00",
+        "categoria": "Esportes"
+      },
+      {
+        "ranking": 4,
+        "assunto": "Ceará SC x América-MG",
+        "volume_buscas": "100 mil+",
+        "crescimento_percentual": "1000%",
+        "inicio_tendencia": "2026-11-09T18:47:00-03:00",
+        "categoria": "Esportes"
+      },
+      {
+        "ranking": 5,
+        "assunto": "Goiás x Ponte Preta",
+        "volume_buscas": "50 mil+",
+        "crescimento_percentual": "1000%",
+        "inicio_tendencia": "2026-11-09T18:47:00-03:00",
+        "categoria": "Esportes"
+      },
+      {
+        "ranking": 6,
+        "assunto": "Athletic x Atlético-GO",
+        "volume_buscas": "50 mil+",
+        "crescimento_percentual": "1000%",
+        "inicio_tendencia": "2026-11-09T15:47:00-03:00",
+        "categoria": "Esportes"
+      }
+    ]
+  },
+  "noticias": [
+    {
+      "id": "futebol-001",
+      "ranking_trends": 1,
+      "termo_trends": "Carlos Miguel",
+      "categoria": "Esportes",
+      "subcategoria": "Futebol Brasileiro",
+      "titulo": "Carlos Miguel vira herói e entra no radar da Seleção",
+      "paragrafos": [
+        "O goleiro Carlos Miguel vive uma temporada de protagonista no Palmeiras! Depois de defender cobranças decisivas contra o Vasco, ele ajudou o Verdão a garantir vaga na final da Copa do Brasil.",
+        "O arqueiro também havia brilhado nas disputas por pênaltis da Libertadores e do Campeonato Paulista, consolidando sua reputação como especialista nesse momento de pressão.",
+        "O desempenho colocou Carlos Miguel no radar de Carlo Ancelotti. O goleiro esteve próximo de ser convocado, mas acabou fora da lista por decisão da CBF."
+      ],
+      "data_publicacao": "2026-11-10T04:00:00-03:00",
+      "data_evento": "2026-11-08",
+      "esporte": {
+        "modalidade": "Futebol",
+        "campeonato": "Copa do Brasil 2026",
+        "time": ["Palmeiras", "Vasco da Gama"],
+        "atletas": ["Carlos Miguel", "Piquerez", "Puma Rodríguez", "Colidio"],
+        "placar": "Vasco 2-1 Palmeiras (4-5 nos pênaltis)",
+        "status_partida": "encerrada",
+        "classificacao": [{"time": "Palmeiras", "resultado": "Classificado para a final"}],
+        "proximo_evento": "Final da Copa do Brasil contra o Grêmio"
+      },
+      "regiao": null,
+      "politica": null,
+      "entidades": ["CBF", "Seleção Brasileira", "Palmeiras"],
+      "link_principal": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/10/como-carlos-miguel-virou-pegador-de-penaltis-no-palmeiras-e-entrou-no-radar-da-selecao-brasileira.ghtml",
+      "fontes": [
+        {"veiculo": "ge", "titulo_original": "Como Carlos Miguel virou pegador de pênaltis no Palmeiras e entrou no radar da seleção brasileira", "url": "https://ge.globo.com/futebol/times/palmeiras/noticia/2026/11/10/como-carlos-miguel-virou-pegador-de-penaltis-no-palmeiras-e-entrou-no-radar-da-selecao-brasileira.ghtml", "data_publicacao": "2026-11-10T04:00:00-03:00"},
+        {"veiculo": "CBF", "titulo_original": "Palmeiras bate Vasco nos pênaltis e enfrenta Grêmio na final da Copa do Brasil", "url": "https://www.cbf.com.br/futebol-brasileiro/noticias/copa-brasil-masculino/a/palmeiras-bate-vasco-nos-penaltis-e-enfrenta-gremio-na-final-da-copa-do-brasil", "data_publicacao": "2026-11-08T23:50:00-03:00"}
+      ]
+    },
+    {
+      "id": "futebol-002",
+      "ranking_trends": 2,
+      "termo_trends": "Atlético Madrid x Barcelona",
+      "categoria": "Esportes",
+      "subcategoria": "Futebol Internacional",
+      "titulo": "Barcelona vence Atlético em duelo movimentado",
+      "paragrafos": [
+        "Que espetáculo na Espanha! O Barcelona derrotou o Atlético de Madrid por 2 a 1, em confronto válido pela 12ª rodada de La Liga.",
+        "Giuliano abriu o placar para os donos da casa aos 10 minutos. Mas Fermín López apareceu duas vezes, aos 45 e 66 minutos, para virar a partida.",
+        "Com o resultado, o Barça conquista três pontos importantes na competição. O Atlético, por sua vez, deixa escapar a oportunidade de pontuar diante de sua torcida."
+      ],
+      "data_publicacao": null,
+      "data_evento": "2026-11-08",
+      "esporte": {"modalidade": "Futebol", "campeonato": "La Liga 2026/2027", "time": ["Atlético de Madrid", "Barcelona"], "atletas": ["Giuliano", "Fermín López"], "placar": "Atlético de Madrid 1-2 Barcelona", "status_partida": "encerrada", "classificacao": [], "proximo_evento": null},
+      "regiao": null,
+      "politica": null,
+      "entidades": ["La Liga"],
+      "link_principal": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-fc-barcelona-12",
+      "fontes": [
+        {"veiculo": "La Liga", "titulo_original": "Atlético de Madrid vs FC Barcelona - LALIGA EA SPORTS", "url": "https://iaas-public-front-pro.laliga.com/partido/temporada-2026-2027-laliga-ea-sports-atletico-de-madrid-fc-barcelona-12", "data_publicacao": null},
+        {"veiculo": "Atlético de Madrid", "titulo_original": "Postpartido: Atlético de Madrid - FC Barcelona", "url": "https://www.atleticodemadrid.com/postpartidos/atletico-de-madrid-fc-barcelona-08-11-2026-22-15", "data_publicacao": null}
+      ]
+    },
+    {
+      "id": "futebol-003",
+      "ranking_trends": 3,
+      "termo_trends": "Manchester United x Aston Villa",
+      "categoria": "Esportes",
+      "subcategoria": "Premier League",
+      "titulo": "Manchester United arranca empate épico contra o Villa",
+      "paragrafos": [
+        "O torcedor que deixou o estádio antes do apito final perdeu uma verdadeira loucura! Manchester United e Aston Villa empataram em 4 a 4, em Old Trafford, pela Premier League.",
+        "O Villa chegou a abrir vantagem de 4 a 2, com gols de Alysson, Nicolas Jackson, John McGinn e Leon Goretzka. Parecia vitória garantida!",
+        "Mas Bruno Fernandes, Youri Tielemans, Joshua Zirkzee e Patrick Dorgu apareceram para garantir o empate, com o último gol saindo aos 96 minutos."
+      ],
+      "data_publicacao": null,
+      "data_evento": "2026-11-08",
+      "esporte": {"modalidade": "Futebol", "campeonato": "Premier League 2026/2027", "time": ["Manchester United", "Aston Villa"], "atletas": ["Alysson", "Nicolas Jackson", "John McGinn", "Leon Goretzka", "Bruno Fernandes", "Youri Tielemans", "Joshua Zirkzee", "Patrick Dorgu"], "placar": "Manchester United 4-4 Aston Villa", "status_partida": "encerrada", "classificacao": [], "proximo_evento": null},
+      "regiao": null,
+      "politica": null,
+      "entidades": ["Premier League"],
+      "link_principal": "https://www.avfc.co.uk/news/2026/november/08/report-manchester-united-4-4-aston-villa/",
+      "fontes": [
+        {"veiculo": "Aston Villa", "titulo_original": "Manchester United 4-4 Aston Villa", "url": "https://www.avfc.co.uk/news/2026/november/08/report-manchester-united-4-4-aston-villa/", "data_publicacao": null}
+      ]
+    },
+    {
+      "id": "futebol-004",
+      "ranking_trends": 4,
+      "termo_trends": "Ceará SC x América-MG",
+      "categoria": "Esportes",
+      "subcategoria": "Brasileirão Série B",
+      "titulo": "América-MG surpreende Ceará fora de casa",
+      "paragrafos": [
+        "Vitória importantíssima para o América-MG! A equipe mineira derrotou o Ceará por 1 a 0, na Arena Castelão, pela 37ª rodada da Série B.",
+        "O gol decisivo foi marcado por Matías Segovia, aos seis minutos do segundo tempo. O Coelho segurou a pressão dos donos da casa até o apito final.",
+        "O resultado complica a situação do Ceará, que segue ameaçado pelo rebaixamento, enquanto o América conquista três pontos importantes na reta final."
+      ],
+      "data_publicacao": null,
+      "data_evento": "2026-11-08",
+      "esporte": {"modalidade": "Futebol", "campeonato": "Campeonato Brasileiro Série B 2026", "time": ["Ceará", "América-MG"], "atletas": ["Matías Segovia"], "placar": "Ceará 0-1 América-MG", "status_partida": "encerrada", "classificacao": [], "proximo_evento": null},
+      "regiao": null,
+      "politica": null,
+      "entidades": ["CBF"],
+      "link_principal": "https://www.caju.fm/sports/futebol/jogo/serie-b/ceara-x-america-mineiro-401860430",
+      "fontes": [
+        {"veiculo": "Painel da Bola", "titulo_original": "Ceará 0 x 1 América Mineiro", "url": "https://caju.fm/sports/futebol/jogo/serie-b/ceara-x-america-mineiro-401860430", "data_publicacao": null},
+        {"veiculo": "VEJA", "titulo_original": "Minuto a Minuto: Ceará X América-MG - 08/11/2026", "url": "https://veja.abril.com.br/brasileiro-serie-b-2026/08-11-2026/ceara-e-america-mg/", "data_publicacao": null}
+      ]
+    },
+    {
+      "id": "futebol-005",
+      "ranking_trends": 5,
+      "termo_trends": "Goiás x Ponte Preta",
+      "categoria": "Esportes",
+      "subcategoria": "Brasileirão Série B",
+      "titulo": "Goiás vence no apagar das luzes e segue vivo",
+      "paragrafos": [
+        "Foi emoção até o último segundo! O Goiás venceu a Ponte Preta por 1 a 0, pela 37ª rodada da Série B, com gol salvador nos acréscimos.",
+        "Nicolas balançou as redes aos 50 minutos do segundo tempo, garantindo três pontos fundamentais para o Esmeraldino na disputa por uma vaga nos playoffs de acesso.",
+        "Com 58 pontos, o Goiás continua na briga pela classificação. A decisão fica para a última rodada, quando enfrentará o Sport fora de casa."
+      ],
+      "data_publicacao": "2026-11-08T22:22:00-03:00",
+      "data_evento": "2026-11-08",
+      "esporte": {"modalidade": "Futebol", "campeonato": "Campeonato Brasileiro Série B 2026", "time": ["Goiás", "Ponte Preta"], "atletas": ["Nicolas", "Mozart"], "placar": "Goiás 1-0 Ponte Preta", "status_partida": "encerrada", "classificacao": [{"time": "Goiás", "pontos": 58, "posicao": 7}], "proximo_evento": "Goiás x Sport pela última rodada da Série B"},
+      "regiao": null,
+      "politica": null,
+      "entidades": ["CBF"],
+      "link_principal": "https://ge.globo.com/go/futebol/times/goias/noticia/2026/11/08/mozart-elogia-entrega-de-jogadores-e-torcida-em-vitoria-do-goias.ghtml",
+      "fontes": [
+        {"veiculo": "ge", "titulo_original": "Mozart elogia entrega de jogadores e torcida em vitória do Goiás", "url": "https://ge.globo.com/go/futebol/times/goias/noticia/2026/11/08/mozart-elogia-entrega-de-jogadores-e-torcida-em-vitoria-do-goias.ghtml", "data_publicacao": "2026-11-08T22:22:00-03:00"},
+        {"veiculo": "CBF", "titulo_original": "Goiás x Ponte Preta - Campeonato Brasileiro Série B", "url": "https://www.cbf.com.br/futebol-brasileiro/jogos/campeonato-brasileiro/serie-b/2026/goias-x-ponte-preta/833277", "data_publicacao": null}
+      ]
+    },
+    {
+      "id": "futebol-006",
+      "ranking_trends": 6,
+      "termo_trends": "Athletic x Atlético-GO",
+      "categoria": "Esportes",
+      "subcategoria": "Brasileirão Série B",
+      "titulo": "Atlético-GO busca virada espetacular contra Athletic",
+      "paragrafos": [
+        "Que virada impressionante! O Atlético-GO derrotou o Athletic Club por 3 a 2, em uma partida emocionante pela 37ª rodada da Série B.",
+        "O Athletic chegou a abrir 2 a 0, mas João Pedro iniciou a reação. Gustavo Coutinho marcou duas vezes, incluindo um gol de pênalti, para virar o confronto.",
+        "A vitória mantém o Atlético-GO na disputa pelas posições de acesso. O Athletic, por outro lado, desperdiçou uma vantagem importante diante de sua torcida."
+      ],
+      "data_publicacao": null,
+      "data_evento": "2026-11-08",
+      "esporte": {"modalidade": "Futebol", "campeonato": "Campeonato Brasileiro Série B 2026", "time": ["Athletic Club", "Atlético-GO"], "atletas": ["Gustavo Coutinho", "João Pedro", "Gustavo Silva"], "placar": "Athletic Club 2-3 Atlético-GO", "status_partida": "encerrada", "classificacao": [], "proximo_evento": null},
+      "regiao": null,
+      "politica": null,
+      "entidades": ["CBF"],
+      "link_principal": "https://www.sofascore.com/football/match/athletic-club-atletico-goianiense/oWcsAfMc",
+      "fontes": [
+        {"veiculo": "Sofascore", "titulo_original": "Athletic Club vs Atlético Goianiense live score, H2H and lineups", "url": "https://www.sofascore.com/football/match/athletic-club-atletico-goianiense/oWcsAfMc", "data_publicacao": null},
+        {"veiculo": "Portal Rondônia", "titulo_original": "Athletic Club x Atlético-GO, Campeonato Brasileiro Série B 2026", "url": "https://futebol.portalrondonia.com/portal/portalrondonia/campeonato-brasileiro-serie-b/2026/partida/athletic-club-x-atletico-go-1148", "data_publicacao": null}
+      ]
+    }
+  ],
+  "resumo_execucao": {
+    "total_tendencias": 6,
+    "total_noticias": 6,
+    "noticias_por_categoria": {"Esportes": 6},
+    "noticias_descartadas": 0,
+    "data_conclusao": "2026-11-10T08:47:00-03:00",
+    "observacoes": [
+      "Monitoramento limitado ao futebol brasileiro e internacional.",
+      "A página do Google Trends apresentou tendências de futebol entre as consultas mais pesquisadas nas últimas 24 horas.",
+      "Foram identificadas seis tendências relacionadas ao futebol nas informações recuperadas. Não foram inventadas posições adicionais para completar dez tendências.",
+      "Os volumes de pesquisa são faixas aproximadas divulgadas pelo Google Trends, não contagens absolutas.",
+      "As classificações completas dos campeonatos não foram preenchidas quando não havia confirmação suficiente.",
+      "Algumas fontes disponibilizam resultados e informações de partidas, mas não apresentam data de publicação editorial identificável."
+    ]
+  }
+}
